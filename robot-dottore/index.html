@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#082b63">
+  <meta name="description" content="Allena il robot-dottore: osserva gli esempi con le gemme, cerca una regola e classifica otto campioni.">
+  <title>Allena il robot-dottore · Gioca con l’AI</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../style.css">
+  <script defer src="../script.js"></script><script defer src="../assets/games.js"></script><script defer src="../assets/game-ui.js"></script><script defer src="game.js"></script>
+</head>
+<body data-page="gemme" data-base="../">
+  <a class="skip-link" href="#contenuto">Vai al gioco</a><div id="site-header"></div>
+  <main id="contenuto" class="site-main">
+    <header class="game-hero"><p class="breadcrumbs"><a href="../index.html">Tutti i giochi</a> <span aria-hidden="true">/</span> Gemme</p><p class="eyebrow">01 / Forme e colori</p><h1>Allena il robot-dottore</h1><p>Il robot impara osservando esempi già classificati. Poi prova a classificare nuovi campioni.</p></header>
+    <ol class="step-strip"><li><span>1</span>Guarda gli esempi</li><li><span>2</span>Cerca l’indizio</li><li><span>3</span>Prova a classificare</li></ol>
+    <section class="panel" aria-labelledby="examples-title"><p class="section-number">Gli esempi per imparare</p><h2 id="examples-title">Due contenitori, due classi.</h2><p>Questi campioni sono già al posto giusto. Che cosa hanno in comune quelli dello stesso contenitore?</p><div id="references" class="two-columns"></div></section>
+    <section aria-labelledby="samples-title"><p class="section-number">Ora prova tu</p><h2 id="samples-title">Campioni da classificare</h2><p class="muted">Scegli A oppure B per ogni pirottina. Puoi ripensarci e cambiare risposta.</p>
+      <div class="score-toolbar"><div><span class="score-small">Le tue risposte</span><strong class="score-number" id="score" role="status" aria-live="polite">0 / 8 corrette</strong><div class="progress" role="progressbar" aria-label="Campioni classificati" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" id="progress"><span></span></div><p class="progress-note" id="progress-note">0 di 8 classificati</p></div><div class="toolbar-actions"><button class="button primary" id="reveal" type="button" aria-controls="rule" aria-expanded="false">Rivela la regola</button><button class="button secondary" id="restart" type="button">Ricomincia</button></div></div>
+      <div id="rule" class="rule-card" hidden></div><div class="samples-grid" id="samples"></div><p id="complete" class="completion-note" role="status" hidden></p>
+    </section>
+    <aside class="science-box"><div><p class="eyebrow">Dal gioco alla ricerca</p><h2>Dalle gemme alla biomedicina</h2><p>In questo gioco abbiamo usato gemme colorate. Nella ricerca biomedica, l’intelligenza artificiale può analizzare immagini, cellule, segnali biologici o dati dei pazienti per riconoscere segnali importanti. Per questo è fondamentale allenarla con esempi corretti.</p></div></aside>
+    <details class="curiosity"><summary>Per i più curiosi: che cosa stiamo imparando?</summary><p>Qui sei tu a cercare una regola partendo da esempi già classificati: è un gioco che rappresenta l’apprendimento supervisionato. La regola di questo quiz è fissata nel programma.</p><p>Nel gioco delle cellule puoi anche vedere un piccolo algoritmo all’opera e insegnargli qualcosa aggiungendo nuovi esempi.</p><a class="text-link" href="../dna-terapia/index.html">Prova AI detective delle cellule →</a></details>
+    <noscript><p class="notice">Attiva JavaScript nel browser per vedere i campioni e giocare.</p></noscript>
+  </main><div id="site-footer"></div>
+</body>
+</html>

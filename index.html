@@ -1,27 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notte dei Ricercatori - AI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giochi per bambini e famiglie: scopri come l’intelligenza artificiale impara dagli esempi. Notte delle Ricercatrici e dei Ricercatori.">
+  <meta name="theme-color" content="#082b63">
+  <title>Gioca con l’AI · Notte delle Ricercatrici e dei Ricercatori</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-<body>
-  <main class="container">
-    <h1>Notte dei Ricercatori</h1>
-    <h2>Giochi interattivi sull’intelligenza artificiale</h2>
+<body data-page="home" data-base="./">
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <div id="site-header"></div>
+  <main id="contenuto" class="site-main">
+    <section class="home-hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow"><span class="small-star" aria-hidden="true">✦</span> Un laboratorio per menti curiose</p>
+        <h1 id="hero-title">Come impara<br>un’<span class="purple-text">intelligenza<br class="desktop-break"> artificiale?</span></h1>
+        <p class="hero-copy">Scopriamolo giocando. Osserva gli esempi, cerca gli indizi e aiuta un robot a imparare qualcosa di nuovo.</p>
+        <a href="#giochi" class="button primary">Scegli un gioco <span aria-hidden="true">↓</span></a>
+        <p class="hero-note">Per bambini e famiglie · Anche dai 6 anni, insieme a un adulto</p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/laboratorio.svg" alt="Un robot osserva una gemma a cuore e una cellula: gli esempi sono il suo punto di partenza." width="520" height="450">
+        <p>Il primo ingrediente dell’AI?<br><strong>Gli esempi giusti.</strong></p>
+      </div>
+    </section>
 
-    <div class="cards">
-      <a class="card" href="robot-dottore/index.html">
-        <h3>🤖 Robot-dottore</h3>
-        <p>L’AI impara con le gemme</p>
-      </a>
+    <section id="giochi" class="games-section" aria-labelledby="games-title">
+      <div class="section-heading"><div><p class="eyebrow">Due giochi, una scoperta</p><h2 id="games-title">Tocca a te allenare il robot.</h2></div><p>Non serve sapere programmare.<br>Bastano curiosità e un po’ di attenzione.</p></div>
+      <div class="game-links">
+        <a class="game-link gems-link" href="robot-dottore/index.html">
+          <div class="game-preview gem-preview" aria-hidden="true"><span class="preview-label">01 / FORME E COLORI</span><span class="preview-heart">♥</span><span class="preview-square"></span><span class="preview-bar"></span><span class="preview-badge">A oppure B?</span></div>
+          <div class="game-description"><span class="tag">Osserva e trova l’indizio</span><h3>Allena il<br>robot-dottore</h3><p>Gemme colorate, due contenitori e una regola da scoprire. Il colore ti aiuta… oppure ti distrae?</p><span class="card-action">Gioca con le gemme <span aria-hidden="true">↗</span></span></div>
+        </a>
+        <a class="game-link cells-link" href="dna-terapia/index.html">
+          <div class="game-preview cell-preview" aria-hidden="true"><span class="preview-label">02 / CELLULE E INDIZI</span><svg viewBox="0 0 400 165"><ellipse cx="130" cy="88" rx="43" ry="43" fill="#e9ddf7" stroke="#674194" stroke-width="3"/><circle cx="118" cy="80" r="5" fill="#674194"/><circle cx="143" cy="98" r="5" fill="#674194"/><ellipse cx="270" cy="88" rx="71" ry="47" fill="#e9ddf7" stroke="#674194" stroke-width="3"/><g fill="#674194"><circle cx="240" cy="70" r="5"/><circle cx="265" cy="72" r="5"/><circle cx="291" cy="69" r="5"/><circle cx="225" cy="92" r="5"/><circle cx="253" cy="100" r="5"/><circle cx="281" cy="101" r="5"/><circle cx="312" cy="90" r="5"/></g></svg><span class="preview-badge">Nuovi esempi, nuove idee</span></div>
+          <div class="game-description"><span class="tag">Confronta e insegna all’AI</span><h3>AI detective<br>delle cellule</h3><p>Guarda i puntini, fai una previsione e confrontala con il robot. Riuscirai ad aiutarlo quando sbaglia?</p><span class="card-action">Esplora le cellule <span aria-hidden="true">↗</span></span></div>
+        </a>
+      </div>
+    </section>
 
-      <a class="card" href="dna-terapia/index.html">
-        <h3>🧬 Dal DNA alla terapia</h3>
-        <p>Scopri come i dati possono aiutare la medicina personalizzata</p>
-      </a>
-    </div>
+    <section class="learning-section" aria-labelledby="learning-title">
+      <p class="eyebrow">Imparare dagli esempi</p><h2 id="learning-title">Un piccolo viaggio dentro l’AI.</h2>
+      <ol class="learning-steps"><li><span>1</span><h3>Osserva</h3><p>Parti da esempi che hanno già una risposta.</p></li><li><span>2</span><h3>Prova</h3><p>Cerca gli indizi e classifica un nuovo campione.</p></li><li><span>3</span><h3>Scopri</h3><p>Confronta le risposte: anche un robot può sbagliare.</p></li></ol>
+    </section>
+    <aside class="science-box"><span class="science-symbol" aria-hidden="true">✦</span><div><p class="eyebrow">Dal gioco alla ricerca</p><h2>Buoni esempi, domande migliori.</h2><p>Nella ricerca biomedica, l’AI aiuta a cercare somiglianze e segnali nei dati. Per imparare bene servono esempi corretti, diversi tra loro e persone che controllino i risultati.</p></div></aside>
+    <noscript><p class="notice">Per usare i giochi, attiva JavaScript nel browser.</p></noscript>
   </main>
+  <div id="site-footer"></div>
 </body>
 </html>
